@@ -2,18 +2,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MailSmgAPI.Models
 {
-    public class TodoContext : DbContext
+    public class MailContext : DbContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options)
-            : base(options)
+        public MailContext(DbContextOptions<MailContext> options) : base(options)
         {
         }
 
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Account> Accounts { get; set; }
-        public DbSet<Message> Messages { get; set; }
-        public DbSet<Receiver> Receivers { get; set; }
-        public DbSet<Post> Posts { get; set; }
-        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Account> Account { get; set; }
+        public DbSet<Message> Message { get; set; }
+        public DbSet<Receiver> Receiver { get; set; }
+        public DbSet<Post> Post { get; set; }
+        public DbSet<Payment> Payment { get; set; }
     }
 }

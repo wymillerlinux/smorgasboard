@@ -6,9 +6,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189f33f6-dec1-4909-84a7-2f08ccd0df61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Models/MailContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/CustomerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/MessageController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/PaymentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/PostController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/ReceiverController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MailSmgAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MailSmgAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MailSmgAPI/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MailSmgAPI/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/MailSmgAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MailSmgAPI/MailSmgAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/Models/MailContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MailSmgAPI/Models/MailContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MailSmgAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MailSmgAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MailSmgAPI/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +47,40 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MailSmgAPI">
+    <configuration name="Publish MailSmgAPI to Azure" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
+      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/MailSmgAPI/MailSmgAPI.csproj" />
+      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="54c15c1c-862b-4024-b6d6-63b56c122342" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/54c15c1c-862b-4024-b6d6-63b56c122342/resourceGroups/RGOne/providers/Microsoft.Web/sites/mailsmg" />
+      <option name="AZURE_WEB_APP_NAME" value="" />
+      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/54c15c1c-862b-4024-b6d6-63b56c122342/resourceGroups/RGOne/providers/Microsoft.Web/serverfarms/ASP-RGOne-b49a" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
+      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
+      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
+      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
+      <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
+      <option name="AZURE_WEB_APP_SLOT_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="54c15c1c-862b-4024-b6d6-63b56c122342" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
+      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
+      <option name="AZURE_SQL_DATABASE_ID" value="/subscriptions/54c15c1c-862b-4024-b6d6-63b56c122342/resourceGroups/RGOne/providers/Microsoft.Sql/servers/sqltestone/databases/mailsmg" />
+      <option name="AZURE_SQL_DATABASE_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="wyatt" />
+      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
+      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
+      <method v="2" />
+    </configuration>
     <configuration name="MailSmgAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MailSmgAPI/MailSmgAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -76,14 +120,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631995248320</updated>
-      <workItem from="1631995257638" duration="1921000" />
+      <workItem from="1631995257638" duration="2927000" />
+      <workItem from="1631998460973" duration="1541000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
